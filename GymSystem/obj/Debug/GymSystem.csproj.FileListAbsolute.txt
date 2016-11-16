@@ -1,0 +1,244 @@
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\bin\Debug\GymSystem.exe.config
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\bin\Debug\GymSystem.exe
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\bin\Debug\GymSystem.pdb
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\GymSystem.csprojResolveAssemblyReference.cache
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\MainWindow.g.cs
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\App.g.cs
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\GymSystem_MarkupCompile.cache
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\GymSystem_MarkupCompile.lref
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\MainWindow.baml
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\GymSystem.g.resources
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\GymSystem.Properties.Resources.resources
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\GymSystem.csproj.GenerateResource.Cache
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\GymSystem.exe
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\GymSystem.pdb
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\addMember1.g.cs
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\deleteMember2.g.cs
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\addMember1.baml
+c:\users\damien\documents\visual studio 2015\Projects\GymSystem\GymSystem\obj\Debug\deleteMember2.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\Window1.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\Window1.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCviewMem.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCviewMem.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCviewTimetable.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCviewTimetable.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\editTimetable.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\editTimetable.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\AdminMenu.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCaddStaff.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCdeleteStaff.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCeditStaff.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\AdminMenu.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCaddStaff.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCdeleteStaff.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCeditStaff.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\Login.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\Login.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\MembersMenu.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCbmi.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCmembersTimeTable.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\MembersMenu.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCbmi.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\UCmembersTimeTable.baml
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\splashScreen.g.cs
+C:\Users\Damien\Documents\Visual Studio 2015\Projects\GymSystem\GymSystem\obj\Debug\splashScreen.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\bin\Debug\GymSystem.exe.config
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem.exe
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem.pdb
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\bin\Debug\gymDatabase.mdf
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\bin\Debug\gymDatabase_log.ldf
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\bin\Debug\GymSystem.exe
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\bin\Debug\GymSystem.pdb
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem.csprojResolveAssemblyReference.cache
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\addMember1.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\AdminMenu.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\deleteMember2.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\editTimetable.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\Login.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\MainWindow.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\MembersMenu.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\splashScreen.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCaddStaff.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCbmi.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCdeleteStaff.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCeditStaff.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCmembersTimeTable.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCviewMem.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCviewTimetable.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\Window1.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\App.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem_Content.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem_MarkupCompile.cache
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem_MarkupCompile.lref
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\addMember1.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\AdminMenu.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\deleteMember2.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\editTimetable.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\Login.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\MainWindow.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\MembersMenu.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\splashScreen.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCaddStaff.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCbmi.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCdeleteStaff.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCeditStaff.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCmembersTimeTable.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCviewMem.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\UCviewTimetable.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\Window1.baml
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem.g.resources
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem.Properties.Resources.resources
+C:\Users\Damien\Documents\xxx phases\gym phase4\GymSystem\GymSystem\obj\Debug\GymSystem.csproj.GenerateResource.Cache
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\GymSystem.exe.config
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem.exe
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem.pdb
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\gymDatabase.mdf
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\gymDatabase_log.ldf
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\GymSystem.exe
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\GymSystem.pdb
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\EntityFramework.dll
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\EntityFramework.xml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem.csprojResolveAssemblyReference.cache
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\addMember1.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\AdminMenu.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\deleteMember2.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\editTimetable.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\Login.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\MainWindow.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\MembersMenu.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\splashScreen.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCaddStaff.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCbmi.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCdeleteStaff.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCeditStaff.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCmembersTimeTable.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCviewMem.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCviewTimetable.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\Window1.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\App.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem_Content.g.cs
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem_MarkupCompile.cache
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem_MarkupCompile.lref
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\addMember1.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\AdminMenu.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\deleteMember2.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\editTimetable.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\Login.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\MainWindow.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\MembersMenu.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\splashScreen.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCaddStaff.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCbmi.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCdeleteStaff.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCeditStaff.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCmembersTimeTable.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCviewMem.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\UCviewTimetable.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\Window1.baml
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem.g.resources
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem.Properties.Resources.resources
+C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\obj\Debug\GymSystem.csproj.GenerateResource.Cache
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\gymDatabase.mdf
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\gymDatabase_log.ldf
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\GymSystem.exe.config
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\GymSystem.exe
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\GymSystem.pdb
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\EntityFramework.dll
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\EntityFramework.xml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem.csprojResolveAssemblyReference.cache
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\addMember1.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\AdminMenu.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\deleteMember2.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\editTimetable.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\Login.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\MainWindow.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\MembersMenu.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\splashScreen.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCaddStaff.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCbmi.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCdeleteStaff.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCeditStaff.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCmembersTimeTable.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCviewMem.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCviewTimetable.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\Window1.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\App.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem_Content.g.cs
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem_MarkupCompile.cache
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem_MarkupCompile.lref
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\addMember1.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\AdminMenu.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\deleteMember2.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\editTimetable.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\Login.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\MainWindow.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\MembersMenu.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\splashScreen.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCaddStaff.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCbmi.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCdeleteStaff.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCeditStaff.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCmembersTimeTable.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCviewMem.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\UCviewTimetable.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\Window1.baml
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem.g.resources
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem.Properties.Resources.resources
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem.csproj.GenerateResource.Cache
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem.exe
+C:\Users\Damien\Source\Repos\GymSystemV2\GymSystem\GymSystem\obj\Debug\GymSystem.pdb
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\GymSystem.exe.config
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem.exe
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem.pdb
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\gymDatabase.mdf
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\gymDatabase_log.ldf
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\GymSystem.exe
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\GymSystem.pdb
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\EntityFramework.dll
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\EntityFramework.xml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem.csprojResolveAssemblyReference.cache
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\addMember1.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\AdminMenu.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\deleteMember2.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\editTimetable.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\Login.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\MainWindow.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\MembersMenu.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\splashScreen.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCaddStaff.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCbmi.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCdeleteStaff.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCeditStaff.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCmembersTimeTable.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCviewMem.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCviewTimetable.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\Window1.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\App.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem_Content.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem_MarkupCompile.cache
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem_MarkupCompile.lref
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\addMember1.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\AdminMenu.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\deleteMember2.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\editTimetable.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\Login.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\MainWindow.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\MembersMenu.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\splashScreen.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCaddStaff.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCbmi.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCdeleteStaff.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCeditStaff.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCmembersTimeTable.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCviewMem.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\UCviewTimetable.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\Window1.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem.g.resources
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem.Properties.Resources.resources
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\GymSystem.csproj.GenerateResource.Cache

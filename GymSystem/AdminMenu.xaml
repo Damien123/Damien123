@@ -1,0 +1,26 @@
+﻿<Window x:Class="GymSystem.AdminMenu" BorderThickness="2" BorderBrush="Aqua"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GymSystem"
+        mc:Ignorable="d"
+        Title="Gym System Admin" Height="580" Width="640" Visibility="Visible" WindowStartupLocation="CenterScreen" WindowState="Normal" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Icon="image/gym3.jpg" ResizeMode="NoResize">
+    <Grid Height="562" Margin="10,0,2,0" VerticalAlignment="Top" Width="600">
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+        </Grid.Background>
+        <DockPanel HorizontalAlignment="Left" Height="35" LastChildFill="False" Margin="0,10,0,0" VerticalAlignment="Top" Width="580">
+            <Label x:Name="label" BorderThickness="2" BorderBrush="Aqua" Content="Gym System (Admin Menu)" Height="35" VerticalAlignment="Top" Width="581" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left"/>
+        </DockPanel>
+        <Canvas HorizontalAlignment="Center" Height="47"  Margin="0,45,20,0" VerticalAlignment="Top" Width="580">
+            <Button x:Name="btnaddMember" HorizontalAlignment="Center" Content="Add Staff" Height="47" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.44,0.511" Click="addMember_Click"/>
+            <Button x:Name="btnViewMember" HorizontalAlignment="Center" Content="View Staff" Height="47" VerticalAlignment="Top" Width="100" Canvas.Left="105" Click="viewMember_Click"/>
+            <Button x:Name="btnExit" HorizontalAlignment="Center" Content="Exit" Height="47" VerticalAlignment="Top" Width="55" Canvas.Left="525" Click="btnExit_Click"/>
+            <Button x:Name="button" Content="Delete Staff" Canvas.Left="210" Width="100" Height="47" Click="button_Click"/>
+        </Canvas>
+        <Canvas Name ="canvasPanel" HorizontalAlignment="Left" Width="560" Margin="10,101,0,92"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="57" Margin="181,475,0,0" VerticalAlignment="Top" Width="228" OpacityMask="Black" Source="image/gym4.jpg" Stretch="Fill" RenderTransformOrigin="0.491,0.364"/>
+
+    </Grid>
+</Window>

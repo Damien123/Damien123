@@ -1,0 +1,49 @@
+﻿<Window x:Class="GymSystem.Login" BorderBrush="Black" BorderThickness="2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GymSystem"
+        mc:Ignorable="d"
+        Title="Gym System Login" Height="450" Width="650" WindowStartupLocation="CenterScreen" WindowState="Normal" Icon="image/gym3.jpg" ResizeMode="NoResize" Loaded
+="Window_Loaded" >
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FF8C91CB" Offset="0.992"/>
+            <GradientStop Color="#FF343436" Offset="0.016"/>
+            <GradientStop Color="#FF464D9C" Offset="0.652"/>
+            <GradientStop Color="#FF3A3C59" Offset="0.036"/>
+            <GradientStop Color="#FF3F4375" Offset="0.984"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Height="350" Margin="0,34,0,0" VerticalAlignment="Top" Width="600">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="232*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="80" Margin="325,142,0,0" VerticalAlignment="Top" Width="237" Grid.Row="1">
+            <Canvas Height="79" Margin="10,0,0,0" HorizontalAlignment="Left" Width="202">
+                <Button x:Name="btnLogin" Content="Login" Canvas.Left="22" Canvas.Top="10" Width="68" Height="42" Click="button_Click"/>
+                <Button x:Name="btnCancel" Content="Cancel" Canvas.Left="125" Canvas.Top="10" Width="75" Height="42" Click="button1_Click"/>
+            </Canvas>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="138" Margin="291,5,0,0" VerticalAlignment="Top" Width="309" Grid.Row="1">
+            <Canvas Height="134" Margin="0,0,32,0">
+                <Label x:Name="label" Content="Username" Canvas.Top="21" Width="112" FontSize="16" FontWeight="Bold"/>
+                <Label x:Name="label1" Content="Password" Canvas.Top="75" Width="112" FontSize="16" FontWeight="Bold"/>
+                <TextBox x:Name="tbxUsername" Height="30" TextWrapping="Wrap" Width="120" Canvas.Left="147" Canvas.Top="21" />
+                <PasswordBox x:Name="tbxPassword" Canvas.Left="147" Canvas.Top="71" Width="120" Height="30"/>
+            </Canvas>
+        </StackPanel>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="218" Margin="21,5,0,0" VerticalAlignment="Top" Width="242" Source="image/gym4.jpg" Stretch="Fill" Grid.Row="1"/>
+        <Canvas HorizontalAlignment="Left" Height="34" Margin="21,19,0,0" VerticalAlignment="Top" Width="511">
+            <Label x:Name="lblTitle" Content="&#x9;Gym System LOGIN" Canvas.Left="122" Width="264" Height="36" FontWeight="Bold" FontSize="18" Canvas.Top="-2"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="31" Margin="21,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="579">
+
+            <Label x:Name="lblForgetPw" Content="Forget Password?" Visibility="Hidden" Width="195" RenderTransformOrigin="2.838,0.808" Canvas.Left="374" FontSize="16" FontWeight="Bold" Height="31"/>
+        </Canvas>
+        <Label x:Name="lblLoading" Content="Loading ..." Visibility="Hidden" HorizontalAlignment="Left" Margin="267,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="131" FontSize="16" FontWeight="Bold"/>
+    </Grid>
+</Window> 

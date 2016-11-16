@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="GymSystem.UCmembersTimeTable"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymSystem"
+             mc:Ignorable="d" Width="590.611" Height="353.469">
+    <Grid Margin="10,0,0,10">
+        <Canvas Height="337" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="557">
+            <StackPanel Name="spButtons" Height="20" Canvas.Left="10" Canvas.Top="311" Width="278"/>
+            <StackPanel Name="spTitle" Height="46" Canvas.Left="16" Canvas.Top="10" Width="524"/>
+            <StackPanel Name="spCred2" Height="179" Canvas.Left="306" Canvas.Top="148" Width="234"/>
+            <Label x:Name="lblViewTitle" BorderThickness="2" BorderBrush="Aqua" Content="View Timetable" Canvas.Left="16" Canvas.Top="23" Width="524" FontWeight="Bold" FontSize="14"/>
+            <Calendar Canvas.Left="362" Canvas.Top="61" Width="185" Height="172"/>
+        </Canvas>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="271" VerticalAlignment="Top" Width="359" Margin="0,62,0,0" Source="image/tt3.jpg" Stretch="Fill" OpacityMask="Black"/>
+
+    </Grid>
+</UserControl>

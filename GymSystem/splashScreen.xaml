@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="GymSystem.splashScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymSystem"
+             mc:Ignorable="d" Width="887" Height="596">
+    <Grid Margin="0,0,0,106" HorizontalAlignment="Right" Width="877">
+        <Canvas Height="466" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="857" Margin="10,0,0,0">
+
+            <StackPanel Name="spTitle" Height="46" Canvas.Left="16" Canvas.Top="10" Width="524"/>
+
+            <Label x:Name="lblViewTitle" BorderThickness="2" BorderBrush="Aqua" Content="Welcome to the Gym System" Canvas.Left="16" Canvas.Top="23" Width="812" FontWeight="Bold" FontSize="14"/>
+
+
+            <Image x:Name="image" Height="354" Canvas.Left="50" Canvas.Top="87" Width="778" Source="image/gym2.png" Stretch="Fill"/>
+
+        </Canvas>
+
+    </Grid>
+</UserControl>
