@@ -4,13 +4,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GymSystem"
-             mc:Ignorable="d" Width="590.611" Height="353.469">
-    <Grid Margin="10,0,0,10">
-        <Canvas Height="337" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="557" Margin="14,0,0,0">
+             mc:Ignorable="d" Width="700" Height="550">
+    <Grid Margin="10,0,10,-9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Canvas  Height="530" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="670" Margin="10,0,0,0">
             <StackPanel Name="spButtons" Height="20" Canvas.Left="10" Canvas.Top="311" Width="278"/>
             <StackPanel Name="spTitle" Height="46" Canvas.Left="16" Canvas.Top="10" Width="524"/>
             <StackPanel Name="spCred2" Height="179" Canvas.Left="306" Canvas.Top="148" Width="234"/>
-            <Label x:Name="lblViewTitle" BorderThickness="2" BorderBrush="Aqua" Content="View Timetable" Canvas.Left="16" Canvas.Top="23" Width="524" FontWeight="Bold" FontSize="14"/>
+            <Label x:Name="lblViewTitle" BorderThickness="2" BorderBrush="Aqua" Content="View Timetable" Canvas.Left="16" Canvas.Top="23" Width="644" FontWeight="Bold" FontSize="14"/>
             <StackPanel Height="190" Canvas.Left="16" Canvas.Top="78" Width="272">
                 <Canvas Height="187" Margin="0,0,10,0">
                     <Label x:Name="label" Content="Weight(KG)" Canvas.Top="35" Width="123" Canvas.Left="10"/>

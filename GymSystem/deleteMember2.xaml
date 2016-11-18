@@ -4,9 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GymSystem"
-             mc:Ignorable="d" Width="590.611" Height="353.469">
-    <Grid Margin="10,0,0,10">
-        <Canvas Height="337" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="557">
+            mc:Ignorable="d" Width="700" Height="550">
+    <Grid Margin="10,0,10,-9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Canvas  Height="530" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="670" Margin="10,0,0,0">
 
             <Label x:Name="lblID" Content="ID Number:" Canvas.Left="27" Canvas.Top="63" Width="88" RenderTransformOrigin="0.441,-0.738"/>
             <Label x:Name="lblFName" Content="First Name:" Canvas.Left="26" Canvas.Top="89" Width="88"/>
@@ -36,7 +43,7 @@
             <TextBlock x:Name="textBlock" Canvas.Left="306" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="63" Width="224" Height="108"/>
 
             <Label x:Name="lblCredTitle" Content="Please Enter Credentials" Canvas.Left="306" Canvas.Top="173" Width="234" Height="23"/>
-            <Label x:Name="lblDeleteTitle" BorderThickness="2" BorderBrush="Aqua" Content="Delete Member" Canvas.Left="16" Canvas.Top="23" Width="524" FontWeight="Bold" FontSize="14"/>
+            <Label x:Name="lblDeleteTitle" BorderThickness="2" BorderBrush="Aqua" Content="Delete Member" Canvas.Left="16" Canvas.Top="23" Width="644" FontWeight="Bold" FontSize="14"/>
             <Label x:Name="lblLN2" Content="Last Name:" Canvas.Left="306" Canvas.Top="258" Width="88"/>
             <Label x:Name="lblFN2" Content="First Name:" Canvas.Left="306" Canvas.Top="232" Width="88"/>
             <Label x:Name="lblID2" Content="ID Number:" Canvas.Left="306" Canvas.Top="201" Width="88" RenderTransformOrigin="0.441,-0.738"/>

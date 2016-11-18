@@ -26,24 +26,28 @@ namespace GymSystem
             canvasPanel.Children.Add(sp);
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+       
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            Environment.Exit(0);
+
+
+        }
+
+        private void btnViewTT_Click(object sender, RoutedEventArgs e)
         {
             canvasPanel.Children.Clear();
             UCmembersTimeTable memTT = new UCmembersTimeTable();
             canvasPanel.Children.Add(memTT);
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void btnCheckBMI_Click(object sender, RoutedEventArgs e)
         {
             canvasPanel.Children.Clear();
             UCbmi bmi = new UCbmi();
             canvasPanel.Children.Add(bmi);
-        }
-
-        private void btnExit_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            Environment.Exit(0);
         }
     }
 }
