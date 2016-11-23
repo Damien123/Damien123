@@ -15,7 +15,7 @@
         </Grid.Background>
         <Canvas HorizontalAlignment="Center" Height="47"  Margin="0,45,20,0" VerticalAlignment="Top" Width="580">
             <Button x:Name="btnViewTT" Content="TimeTable" Canvas.Left="210" Width="100" Height="47" Click="btnViewTT_Click"/>
-            <Button x:Name="btnCheckBMI" Content="View TimeTable" Width="100" Canvas.Left="315" Height="47" Click="btnCheckBMI_Click"/>
+            <Button x:Name="btnCheckBMI" Content="BMI" Width="100" Canvas.Left="315" Height="47" Click="btnCheckBMI_Click"/>
             <Button x:Name="btnExit" Content="Exit" Canvas.Left="420" Width="100" Height="47" Click="btnExit_Click"/>
         </Canvas>
         <Canvas Name ="canvasPanel" HorizontalAlignment="Left" Width="700" Margin="50,116,0,169"/>

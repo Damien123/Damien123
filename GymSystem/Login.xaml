@@ -22,10 +22,11 @@
             <RowDefinition Height="232*"/>
             <RowDefinition Height="55*"/>
         </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Left" Height="80" Margin="325,142,0,0" VerticalAlignment="Top" Width="237" Grid.Row="1">
-            <Canvas Height="79" Margin="10,0,0,0" HorizontalAlignment="Left" Width="202">
-                <Button x:Name="btnLogin" Content="Login" Canvas.Left="22" Canvas.Top="10" Width="68" Height="42" Click="button_Click"/>
-                <Button x:Name="btnCancel" Content="Cancel" Canvas.Left="125" Canvas.Top="10" Width="75" Height="42" Click="button1_Click"/>
+        <StackPanel HorizontalAlignment="Left" Height="80" Margin="291,142,0,0" VerticalAlignment="Top" Width="299" Grid.Row="1">
+            <Canvas Height="79" Margin="10,0">
+                <Button x:Name="btnLogin" Content="Staff" Canvas.Left="10" Canvas.Top="10" Width="68" Height="42" Click="button_Click"/>
+                <Button x:Name="btnCancel" Content="Cancel" Canvas.Left="101" Canvas.Top="10" Width="75" Height="42" Click="button1_Click"/>
+                <Button x:Name="button" Content="Member" Canvas.Left="195" Canvas.Top="10" Width="74" Height="42" Click="button_Click_1"/>
             </Canvas>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="138" Margin="291,5,0,0" VerticalAlignment="Top" Width="309" Grid.Row="1">

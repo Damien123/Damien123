@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using System.Data;
 
 using System.Threading;
 using System.ComponentModel;
@@ -27,8 +28,10 @@ namespace GymSystem
         public BackgroundWorker bw = new BackgroundWorker();
 
         //Global list of user records
+        List<Member> memberList = new List<Member>();
         List<Staff> staffList = new List<Staff>();
         gymDatabaseEntities dbEntities = new gymDatabaseEntities();
+        gymDatabaseEntities dbEntities2 = new gymDatabaseEntities();
 
         public Login()
         {
@@ -59,12 +62,33 @@ namespace GymSystem
                 //Add all users to the global user list
                 staffList.Add(staff);
             }
+            //Clear contents of the userList
+            memberList.Clear();
+            foreach (var member in dbEntities2.Members)
+            {
+                //Add all users to the global user list
+                memberList.Add(member);
+            }
+
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+    //////    private void mtdLoadUsersMembers()////////////////////////tester///////////////////////////
+    //////{
+    //////    //Clear contents of the userList
+    //////    memberList.Clear();
+    //////    foreach (var member in dbEntities2.Members)
+    //////    {
+    //////        //Add all users to the global user list
+    //////        memberList.Add(member);
+    //////    }
+    //////}
+
+    private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //Pre-load users into the User global list
+          ////  mtdLoadUsersMembers();
             mtdLoadUsers();
+            /////////////////////////////////tester///////////////////////////
         }
 
 
@@ -76,7 +100,7 @@ namespace GymSystem
                 //Check each user name and password in the global list to see if it matches
                 //the inputted user name and password
                 if
-                (username == staff.UserName && password == staff.Password)
+                (username == staff.UserName.Trim() && password == staff.Password.Trim())//// Testing -> && staff.Password == "1")
                 {
                     //If there is a match then add the details to the local user account
                     userDetails = staff;
@@ -86,32 +110,63 @@ namespace GymSystem
             return userDetails;
         }
 
+        private Member mtdGetMembersDetails(string username, string password)
+        {
+            Member memberDetails = new Member();
+            foreach (var member in memberList)
+            {
+                //Check each user name and password in the global list to see if it matches
+                //the inputted user name and password
+                if
+                (username == member.UserName.Trim() && password == member.Password.Trim())//// Testing -> && staff.Password == "1")
+                {
+                    //If there is a match then add the details to the local user account
+                    memberDetails = member;
+                }
+            }
+            //Return the user details
+            return memberDetails;
+        }
+       
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             // SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Damien\Source\Repos\Damien123\GymSystem\gymDatabase.mdf;Integrated Security=True");
 
             //Create an instance of a user class
             Staff staffDetails = new Staff();
+       ///     Member memberDetails = new Member();////////////////////////////////////////////////tester///////
             //Get the user name from the tbxUserName textbox. Remove unnecessary spaces
             string currentUser = tbxUsername.Text.Trim();
             //Get password text. Note it does not use the same syntax as a normal text box
             string currentPassword = tbxPassword.Password;
             //Run the mtdGetUserDetails method with the inputted user name and password information       
-            staffDetails = mtdGetUserDetails(currentUser, currentPassword);
+            staffDetails = mtdGetUserDetails(currentUser, currentPassword);       
+     ///       memberDetails = mtdGetMembersDetails(currentUser, currentPassword);////tester//////////////
 
+            ////if (memberDetails.Accesslevel == 1)//Admin LEVEL
+            ////{
+            ////    this.Hide();
+            ////    MembersMenu mm = new MembersMenu();//STAFFwindow
+            ////    mm.member = memberDetails;
+            ////    mm.Show();
+            ////    // mw.ShowDialog();
+            ////}
+           
 
-            if (staffDetails.AccessLevel > 0)
+            if (staffDetails.AccessLevel == 1)//Admin LEVEL
             {
                 this.Hide();
-                MainWindow mw = new MainWindow();
-                mw.staff = staffDetails;
-                mw.Show();
+                AdminMenu am = new AdminMenu();//STAFFwindow
+                am.staff = staffDetails;
+                am.Show();
                 // mw.ShowDialog();
             }
-            if (staffDetails.UserName == "D")
+
+            else if (staffDetails.AccessLevel == 2)//Admin LEVEL
             {
                 this.Hide();
-                MainWindow mw = new MainWindow();
+                MainWindow mw = new MainWindow();//STAFFwindow
                 mw.staff = staffDetails;
                 mw.Show();
                 // mw.ShowDialog();
@@ -124,11 +179,29 @@ namespace GymSystem
                 tbxPassword.Password = "";
                 tbxUsername.Focus();
             }
+            ////else if (staffDetails.AccessLevel >= 2 && staffDetails.AccessLevel < 3)//Admin LEVEL
+            ////{
+            ////    this.Hide();
+            ////   AdminMenu mw = new AdminMenu();
+            ////   // mw.staff = staffDetails;///dont need this?????##################
+            ////    mw.Show();
+            ////    // mw.ShowDialog();
+            ////}
+            //else if (adminDetails.AccessLevel > 1)//STAFF LEVEL//////////////////tester///////////
+            //{
+            //    this.Hide();
+            //    AdminMenu mw = new AdminMenu();
+            //    mw.admin = adminDetails;
+            //    mw.Show();
+            //    // mw.ShowDialog();
+            //}
+
+
 
         }
 
 
-//Alternative LOGIN BUTTON CLICK!!!
+        //Alternative LOGIN BUTTON CLICK!!!
         //private void button_Click(object sender, RoutedEventArgs e)
         //{
         //    MainWindow mw = new MainWindow();
@@ -144,89 +217,74 @@ namespace GymSystem
             Environment.Exit(0);
         }
 
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
+        }
 
-        ///Alternative login Minus the Database connection!!!////////////////////////
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //Create an instance of a user class
+         ///   Staff staffDetails = new Staff();
+            Member memberDetails = new Member();////////////////////////////////////////////////tester///////
+            //Get the user name from the tbxUserName textbox. Remove unnecessary spaces
+            string currentUser = tbxUsername.Text.Trim();
+            //Get password text. Note it does not use the same syntax as a normal text box
+            string currentPassword = tbxPassword.Password;
+            //Run the mtdGetUserDetails method with the inputted user name and password information       
+       ///     staffDetails = mtdGetUserDetails(currentUser, currentPassword);
+            memberDetails = mtdGetMembersDetails(currentUser, currentPassword);////tester//////////////
 
+            if (memberDetails.Accesslevel == 1)//Admin LEVEL
+            {
+                this.Hide();
+                MembersMenu mm = new MembersMenu();//STAFFwindow
+                mm.member = memberDetails;
+                mm.Show();
+                // mw.ShowDialog();
+            }
+            else
+            {
+                // lblLoginAdvice.Content = "Invalid details!";
+                MessageBox.Show("Please enter the correct Username and Password!");
+                tbxUsername.Text = "";
+                tbxPassword.Password = "";
+                tbxUsername.Focus();
+            }
+            
 
-
-        //private void Window_Loaded(object sender, RoutedEventArgs e)
-        //{
-
-        //}
-
-        //private void button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    //
-        //    String userName = tbxUsername.Text.ToLower();
-        //    string pass = tbxPassword.Password;
-        //    lblForgetPw.Visibility = Visibility.Hidden;
-        //    lblLoading.Visibility = Visibility.Visible;
-        //    Mouse.OverrideCursor = Cursors.Wait;
-        //    tbxUsername.IsEnabled = false;
-        //    tbxPassword.IsEnabled = false;
-        //    btnLogin.IsEnabled = false;
-
-        //    if (userName == "d" && pass == "d")
-        //    {
-        //        if (bw.IsBusy == false)
-        //        {
-        //            bw.RunWorkerAsync();
-        //        }
-        //    }
-        //    else
-        //    {
-        //        lblLoading.Visibility = Visibility.Hidden;
-        //        lblForgetPw.Visibility = Visibility.Visible;
-        //        lblForgetPw.Content = "Forgot Password ?";
-        //        tbxUsername.IsEnabled = true;
-        //        tbxUsername.BorderBrush = Brushes.Red;
-        //        tbxPassword.IsEnabled = true;
-        //        tbxPassword.BorderBrush = Brushes.Red;
-        //        btnLogin.IsEnabled = true;
-        //        Mouse.OverrideCursor = null;
-        //    }
-        //}
-        ////Method to create the cursor loading icon symbol
-        //private void bw_DoWork(object sender, DoWorkEventArgs e)
-        //{
-        //    Thread.Sleep(1000);
-        //}
-        ////Method to complete the Login Stage, run the loading cursor, provide success message
-        //private void bw_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        //{
-        //    if ((e.Cancelled == true))//provide the Forget Password label ONLY!!!
-        //    {
-        //        lblForgetPw.Visibility = Visibility.Visible;
-        //        lblForgetPw.Content = "Canceled!";
-        //    }
-
-        //    else if (!(e.Error == null))//provide Forget Password Error Message (Label)
-        //    {
-        //        lblForgetPw.Visibility = Visibility.Visible;
-        //        lblForgetPw.Content = "Error: " + e.Error.Message;
-        //    }
-        //    else//proceed with the successfull login procedure
-        //    {
-        //        lblLoading.Visibility = Visibility.Hidden;//hide this
-        //        lblForgetPw.Visibility = Visibility.Visible;//show this
-        //        lblForgetPw.Content = "LOGIN SUCCESSFUL";//place in ForgetPassword label instead!
-        //        Mouse.OverrideCursor = null;
-        //        tbxUsername.IsEnabled = true;
-        //        tbxPassword.IsEnabled = true;
-        //        btnLogin.IsEnabled = true;
-        //        //display the Next Window of the GymSystem
-        //        this.Hide();
-        //        MainWindow mw = new MainWindow();
-        //        mw.Show();
-
-        //    }
-        //}
-
-        ////private void bw_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        ////{
-
-        ////}
-
+            ////else if (staffDetails.AccessLevel == 1)//Admin LEVEL
+            ////{
+            ////    this.Hide();
+            ////    MainWindow mw = new MainWindow();//STAFFwindow
+            ////    mw.staff = staffDetails;
+            ////    mw.Show();
+            ////    // mw.ShowDialog();
+            ////}
+            ////else
+            ////{
+            ////    // lblLoginAdvice.Content = "Invalid details!";
+            ////    MessageBox.Show("Please enter the correct Username and Password!");
+            ////    tbxUsername.Text = "";
+            ////    tbxPassword.Password = "";
+            ////    tbxUsername.Focus();
+            ////}
+            ////else if (staffDetails.AccessLevel >= 2 && staffDetails.AccessLevel < 3)//Admin LEVEL
+            ////{
+            ////    this.Hide();
+            ////   AdminMenu mw = new AdminMenu();
+            ////   // mw.staff = staffDetails;///dont need this?????##################
+            ////    mw.Show();
+            ////    // mw.ShowDialog();
+            ////}
+            //else if (adminDetails.AccessLevel > 1)//STAFF LEVEL//////////////////tester///////////
+            //{
+            //    this.Hide();
+            //    AdminMenu mw = new AdminMenu();
+            //    mw.admin = adminDetails;
+            //    mw.Show();
+            //    // mw.ShowDialog();
+            //}
+        }
     }
 }

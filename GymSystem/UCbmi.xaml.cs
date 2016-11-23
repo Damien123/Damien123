@@ -36,37 +36,107 @@ namespace GymSystem
             textBlock.Text = bmi1;
 
             string Text = Console.ReadLine();
+
+            try
+            {
+
+           
             if (bmi < 18)
             {
-                textBlock.Text = bmi1 + " Your BMI Results Suggest That Uou Are UnderWeight";
+                textBlock.Background = Brushes.LightSkyBlue;
+                textBlock.Text = bmi1 + " Your BMI Results Suggest That You Are UnderWeight";
                 Console.WriteLine("UnderWeight");
                 Console.ReadLine();
-            }
+                tbxWeight.IsEnabled = true;
+                tbxWeight.BorderBrush = Brushes.Aqua;
+                tbxHeight.IsEnabled = true;
+                tbxHeight.BorderBrush = Brushes.Aqua;
+                }
             if (bmi > 18 && bmi < 25)
             {
-                textBlock.Text = bmi1 + " Your BMI Results Suggest That You Are At Normal Weight";
+                textBlock.Background = Brushes.LightSteelBlue;
+                textBlock.Text  = bmi1 + " Your BMI Results Suggest That You Are At Normal Weight";
                 Console.WriteLine("Normal");
                 Console.ReadLine();
-            }
+                    tbxWeight.IsEnabled = true;
+                    tbxWeight.BorderBrush = Brushes.Aqua;
+                    tbxHeight.IsEnabled = true;
+                    tbxHeight.BorderBrush = Brushes.Aqua;
+                }
             if (bmi > 25 && bmi < 29)
             {
+                textBlock.Background = Brushes.LightSteelBlue;
                 textBlock.Text = bmi1 + " Your BMI Results Suggest That You Are OverWeight";
                 Console.WriteLine("OverWeight");
                 Console.ReadLine();
-            }
+                    tbxWeight.IsEnabled = true;
+                    tbxWeight.BorderBrush = Brushes.Aqua;
+                    tbxHeight.IsEnabled = true;
+                    tbxHeight.BorderBrush = Brushes.Aqua;
+                }
             if (bmi > 29 && bmi < 40)
             {
+                textBlock.Background = Brushes.LightSteelBlue;
                 textBlock.Text = bmi1 + " Your BMI Results Suggest That You Are Obese";
                 Console.WriteLine("Obese");
                 Console.ReadLine();
-            }
+                    tbxWeight.IsEnabled = true;
+                    tbxWeight.BorderBrush = Brushes.Aqua;
+                    tbxHeight.IsEnabled = true;
+                    tbxHeight.BorderBrush = Brushes.Aqua;
+                }
             if (bmi > 40)
             {
                 // Console.WriteLine("Extremely Obese");
                 // Console.ReadLine();
+                textBlock.Background = Brushes.Red;
                 textBlock.Text = "Result: " + bmi1 + " Your BMI Suggests That You Are Extremely Obese, Lay Off The Pies!!!";
-                // textBlock.WriteLine("Extremely Obese");
+                    tbxWeight.IsEnabled = true;
+                    tbxWeight.BorderBrush = Brushes.Aqua;
+                    tbxHeight.IsEnabled = true;
+                    tbxHeight.BorderBrush = Brushes.Aqua;
+                    // textBlock.WriteLine("Extremely Obese");
 
+                }
+            else if (tbxWeight.Text != Text && tbxHeight.Text != Text)
+            {             
+                tbxWeight.IsEnabled = true;
+                tbxWeight.BorderBrush = Brushes.ForestGreen;
+                tbxHeight.IsEnabled = true;
+                tbxHeight.BorderBrush = Brushes.ForestGreen;
+                btnBMI.IsEnabled = true;
+                Mouse.OverrideCursor = null;
+                MessageBox.Show("else if ..............test!");
+                tbxWeight.Clear();
+                tbxHeight.Clear();
+            }
+            else 
+            {
+                tbxWeight.IsEnabled = true;
+                tbxWeight.BorderBrush = Brushes.Red;
+
+                tbxHeight.IsEnabled = true;
+                tbxHeight.BorderBrush = Brushes.Red;
+                btnBMI.IsEnabled = true;
+                Mouse.OverrideCursor = null;
+                MessageBox.Show("else ..................test.......Please enter the correct Weight and Height E.G (Weight 70 Height 1.8)!");
+                tbxWeight.Clear();
+                tbxHeight.Clear();
+            }
+            }
+            catch (Exception)
+            {
+                var exception = new Exception("Catch message: ");
+                tbxWeight.IsEnabled = true;
+                tbxWeight.BorderBrush = Brushes.Red;
+                tbxHeight.IsEnabled = true;
+                tbxHeight.BorderBrush = Brushes.Red;
+                btnBMI.IsEnabled = true;
+                Mouse.OverrideCursor = null;
+                MessageBox.Show("CAtch exception ..................test ...........Please enter the correct Weight and Height E.G (Weight 70 Height 1.8)!");
+                tbxWeight.Clear();
+                tbxHeight.Clear();
+                throw;
             }
         }
     }

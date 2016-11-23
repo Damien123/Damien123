@@ -18,6 +18,6 @@ namespace GymSystem
         public string ClassName { get; set; }
         public int Duration { get; set; }
         public decimal Price { get; set; }
-        public System.DateTime DOB { get; set; }
+        public System.DateTime Date { get; set; }
     }
 }

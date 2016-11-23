@@ -17,13 +17,14 @@
             <Button x:Name="btnaddMember" HorizontalAlignment="Center" Content="Add Member" Height="47" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.44,0.511" Click="addMember_Click"/>
             <Button x:Name="btnViewMember" HorizontalAlignment="Center" Content="View Memeber" Height="47" VerticalAlignment="Top" Width="100" Canvas.Left="105" Click="viewMember_Click"/>
             <Button x:Name="btnExit" HorizontalAlignment="Center" Content="Exit" Height="47" VerticalAlignment="Top" Width="55" Canvas.Left="525" Click="btnExit_Click"/>
-            <Button x:Name="button" Content="Delete Member" Canvas.Left="210" Width="100" Height="47" Click="button_Click"/>
-            <Button x:Name="button1" Content="View TimeTable" Width="100" Canvas.Left="315" Height="47" Click="button1_Click"/>
-            <Button x:Name="button2" Content="Edit TimeTable" Canvas.Left="420" Width="100" Height="47" Click="button2_Click"/>
+            <Button x:Name="btnDeleteMember" Content="Delete Member" Canvas.Left="210" Width="100" Height="47" Click="button_Click"/>
+            <Button x:Name="btnViewTT" Content="View TimeTable" Width="100" Canvas.Left="315" Height="47" Click="viewTT_Click"/>
+            <Button x:Name="btnEditTT" Content="Edit TimeTable" Canvas.Left="420" Width="100" Height="47" Click="editTT_Click"/>
         </Canvas>
         <Canvas Name ="canvasPanel" HorizontalAlignment="Left" Width="700" Margin="50,116,0,169"/>
 
         <Label x:Name="label" BorderThickness="2" BorderBrush="Aqua" Content="&#x9;&#x9;&#x9;&#x9;Gym System (Staff Menu)" Height="35" VerticalAlignment="Top" Width="790" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Margin="10,5,10,0"/>
+        <Label x:Name="lblUserName" Content="Label" HorizontalAlignment="Left" Margin="704,45,0,0" VerticalAlignment="Top" Width="96" Height="29"/>
 
     </Grid>
 </Window>

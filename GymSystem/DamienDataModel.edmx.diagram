@@ -6,9 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="96dc81db1904496d9ae25dbeea885b2a" Name="Diagram1">
         <EntityTypeShape EntityType="gymDatabaseModel.Booking" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="gymDatabaseModel.ExerciseClass" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="gymDatabaseModel.Member" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="gymDatabaseModel.Staff" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gymDatabaseModel.ExerciseClass" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gymDatabaseModel.Member" Width="1.5" PointX="3.375" PointY="3.625" />
+        <EntityTypeShape EntityType="gymDatabaseModel.Staff" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

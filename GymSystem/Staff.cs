@@ -15,10 +15,10 @@ namespace GymSystem
     public partial class Staff
     {
         public string StaffID { get; set; }
-        public string Title { get; set; }
+        public string Gender { get; set; }
         public string Forename { get; set; }
         public string Surname { get; set; }
-        public System.DateTime DOB { get; set; }
+        public Nullable<System.DateTime> DOB { get; set; }
         public string UserName { get; set; }
         public string Address1 { get; set; }
         public string Address2 { get; set; }

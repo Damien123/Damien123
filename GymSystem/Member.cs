@@ -15,7 +15,7 @@ namespace GymSystem
     public partial class Member
     {
         public string MemberID { get; set; }
-        public string Title { get; set; }
+        public string Gender { get; set; }
         public string Forename { get; set; }
         public string Surname { get; set; }
         public System.DateTime DOB { get; set; }
@@ -24,5 +24,6 @@ namespace GymSystem
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public string Phone { get; set; }
+        public int Accesslevel { get; set; }
     }
 }

@@ -17,14 +17,14 @@
     <Property Name="ClassName" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Duration" Type="int" Nullable="false" />
     <Property Name="Price" Type="money" Nullable="false" />
-    <Property Name="DOB" Type="date" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
   </EntityType>
   <EntityType Name="Members">
     <Key>
       <PropertyRef Name="MemberID" />
     </Key>
     <Property Name="MemberID" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="Title" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="Forename" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Surname" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="DOB" Type="date" Nullable="false" />
@@ -33,16 +33,17 @@
     <Property Name="Address1" Type="varchar" MaxLength="30" />
     <Property Name="Address2" Type="varchar" MaxLength="30" />
     <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Accesslevel" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Staff">
     <Key>
       <PropertyRef Name="StaffID" />
     </Key>
     <Property Name="StaffID" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="Title" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="Forename" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Surname" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="DOB" Type="date" Nullable="false" />
+    <Property Name="DOB" Type="date" />
     <Property Name="UserName" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Address1" Type="varchar" MaxLength="20" />
     <Property Name="Address2" Type="varchar" MaxLength="20" />

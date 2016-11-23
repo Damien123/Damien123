@@ -27,6 +27,7 @@ namespace GymSystem
             InitializeComponent();
            // canvasPanel.Children.Clear();
             splashScreen sp = new splashScreen();
+            lblUserName.Content = staff.UserName;//.ToString();//"Forgot Password ?";
             canvasPanel.Children.Add(sp);
         }
 
@@ -100,14 +101,14 @@ namespace GymSystem
             canvasPanel.Children.Add(delMem);
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void viewTT_Click(object sender, RoutedEventArgs e)
         {
             canvasPanel.Children.Clear();
             UCviewTimetable vTT = new UCviewTimetable();
             canvasPanel.Children.Add(vTT);
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void editTT_Click(object sender, RoutedEventArgs e)
         {
             canvasPanel.Children.Clear();
             EditTimetable eTT = new EditTimetable();

@@ -19,6 +19,7 @@ namespace GymSystem
     /// </summary>
     public partial class MembersMenu : Window
     {
+        public Member member = new Member();//craeted from the login to initiate my member class within my if statement for member access(name and password)
         public MembersMenu()
         {
             InitializeComponent();

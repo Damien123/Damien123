@@ -298,12 +298,13 @@
       <LastGenOutput>DamienDataModel.cs</LastGenOutput>
     </Content>
     <Content Include="gymDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="gymDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>gymDatabase.mdf</DependentUpon>
     </Content>
+    <Resource Include="image\height.jpg" />
     <Resource Include="image\wall.jpg" />
     <Resource Include="image\lightening.gif" />
     <Resource Include="image\iron.jpg" />

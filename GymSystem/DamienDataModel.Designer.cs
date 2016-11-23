@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Damien\Documents\xxx phases\gym phase5new\GymSystem\GymSystem\DamienDataModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Damien\Source\Repos\Damien123\GymSystem\DamienDataModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

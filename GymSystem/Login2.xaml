@@ -5,33 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GymSystem"
         mc:Ignorable="d"
-        Title="Gym System Login" Height="750" Width="900" WindowStartupLocation="CenterScreen" WindowState="Maximized" Icon="image/gym3.jpg" ResizeMode="NoResize" Loaded
-="Window_Loaded" Cursor="Hand" >
+        Title="Gym System Login" Height="750" Width="900" WindowStartupLocation="CenterScreen" Icon="image/gym3.jpg" ResizeMode="CanMinimize" Loaded
+="Window_Loaded" Cursor="Hand" WindowStyle="ThreeDBorderWindow" WindowState="Maximized" >
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
             <GradientStop Color="#FF8C91CB" Offset="0.992"/>
             <GradientStop Color="#FF343436" Offset="0.016"/>
             <GradientStop Color="#FF464D9C" Offset="0.652"/>
             <GradientStop Color="#FF3A3C59" Offset="0.036"/>
-            <GradientStop Color="#FF3F4375" Offset="0.984"/>
+            <GradientStop Color="#FF03040F" Offset="0.984"/>
         </LinearGradientBrush>
     </Window.Background>
     <Grid Height="585" Margin="24,34,28,0" VerticalAlignment="Top">
         <Grid.Background>
-            <ImageBrush ImageSource="image/lightening.gif"/>
+            <ImageBrush ImageSource="image/lightening.gif" Stretch="UniformToFill" />
         </Grid.Background>
-        <StackPanel HorizontalAlignment="Left" Height="80" Margin="70,260,0,0" VerticalAlignment="Top" Width="237">
-            <Canvas Height="79" Margin="10,0,0,0" HorizontalAlignment="Left" Width="202">
-                <Button x:Name="btnLogin" Content="Login" Canvas.Left="22" Canvas.Top="10" Width="68" Height="42" Click="button_Click"/>
-                <Button x:Name="btnCancel" Content="Cancel" Canvas.Left="125" Canvas.Top="10" Width="75" Height="42" Click="button1_Click"/>
+        <StackPanel HorizontalAlignment="Left" Height="65" Margin="23,260,0,0" VerticalAlignment="Top" Width="297" >
+            <Canvas Height="66" Margin="10,0,0,0" HorizontalAlignment="Left" Width="249">
+                <Button x:Name="btnLogin" Content="Staff" Canvas.Left="10" Canvas.Top="10" Width="68" Height="42" Click="button_Click" BorderThickness="2" BorderBrush="Aqua"/>
+                <Button x:Name="btnCancel" Content="Cancel" Canvas.Left="83" Canvas.Top="10" Width="75" Height="42" Click="button1_Click" BorderThickness="2" BorderBrush="Aqua"/>
+                <Button x:Name="button" Content="Member" Canvas.Left="163" Canvas.Top="10" Width="75" Height="42" Click="button_Click_1" BorderThickness="2" BorderBrush="Aqua"/>
             </Canvas>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="137" Margin="36,131,0,0" VerticalAlignment="Top" Width="309">
             <Canvas Height="134" Margin="0,0,32,0">
-                <Label x:Name="label" Content="Username" Canvas.Top="21" Width="112" FontSize="16" FontWeight="Bold"/>
-                <Label x:Name="label1" Content="Password" Canvas.Top="75" Width="112" FontSize="16" FontWeight="Bold"/>
-                <TextBox x:Name="tbxUsername" Height="30" TextWrapping="Wrap" Width="120" Canvas.Left="147" Canvas.Top="21" FontSize="16" />
-                <PasswordBox x:Name="tbxPassword" Canvas.Left="147" Canvas.Top="71" Width="120" Height="30" FontSize="16"/>
+                <Label x:Name="label" Content="Username" Canvas.Top="21" Width="112" FontSize="16" FontFamily="Stencil" FontWeight="Bold" FontStyle="Italic"/>
+                <Label x:Name="label1" Content="Password" Canvas.Top="75" Width="112" FontSize="16" FontWeight="Bold" FontFamily="Stencil"/>
+                <TextBox x:Name="tbxUsername" BorderThickness="2" BorderBrush="Aqua" Height="30" TextWrapping="Wrap" Width="120" Canvas.Left="147" Canvas.Top="21" FontSize="16" />
+                <PasswordBox x:Name="tbxPassword" BorderThickness="2" BorderBrush="Aqua" Canvas.Left="147" Canvas.Top="71" Width="120" Height="30" FontSize="16"/>
             </Canvas>
         </StackPanel>
         <Canvas HorizontalAlignment="Left" Height="90" Margin="350,148,0,0" VerticalAlignment="Top" Width="250"/>

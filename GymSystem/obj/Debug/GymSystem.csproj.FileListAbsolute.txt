@@ -295,3 +295,5 @@ C:\Users\Damien\Desktop\Damien123\GymSystem\obj\Debug\Window1.baml
 C:\Users\Damien\Desktop\Damien123\GymSystem\obj\Debug\GymSystem.g.resources
 C:\Users\Damien\Desktop\Damien123\GymSystem\obj\Debug\GymSystem.Properties.Resources.resources
 C:\Users\Damien\Desktop\Damien123\GymSystem\obj\Debug\GymSystem.csproj.GenerateResource.Cache
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\Login2.g.cs
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\Login2.baml

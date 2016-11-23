@@ -19,6 +19,7 @@ namespace GymSystem
     /// </summary>
     public partial class AdminMenu : Window
     {
+        public Staff staff = new Staff();
         public AdminMenu()
         {
             InitializeComponent();
@@ -60,12 +61,16 @@ namespace GymSystem
 
         private void viewTT_Click(object sender, RoutedEventArgs e)
         {
-
+            canvasPanel.Children.Clear();
+            UCviewTimetable vTT = new UCviewTimetable();
+            canvasPanel.Children.Add(vTT);
         }
 
         private void editTT_Click(object sender, RoutedEventArgs e)
         {
-
+            canvasPanel.Children.Clear();
+            EditTimetable eTT = new EditTimetable();
+            canvasPanel.Children.Add(eTT);
         }
 
     }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GymSystem"
         mc:Ignorable="d"
-       Title="Gym System Admin " Height="750" Width="900" Visibility="Visible"  WindowStartupLocation="CenterScreen" Icon="image/lightening.gif" ResizeMode="CanMinimize" WindowState="Maximized">
+       Title="Gym System Admin " Height="750" Width="900" Visibility="Visible"  WindowStartupLocation="CenterScreen" Icon="image/lightening.gif" ResizeMode="CanMinimize" WindowState="Maximized" Cursor="Arrow">
     <Window.Background>
         <ImageBrush ImageSource="image/wall.jpg"/>
     </Window.Background>
