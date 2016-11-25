@@ -27,45 +27,193 @@ namespace GymSystem
     /// </summary>
     public partial class UCaddStaff : UserControl
     {
+
+        List<Staff> staffList = new List<Staff>();
+        gymDatabaseEntities dbEntities = new gymDatabaseEntities();
+        Staff currentUser = new Staff();
+        string entityState = "Modify";
+
+
         public UCaddStaff()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+                mtdPopulateUserTable();
+                lstUsersList.ItemsSource = staffList;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Problem during initialisation of application");
+            }
+        }
+
+        private void mtdPopulateUserTable()
+        {
+            staffList.Clear();
+            foreach (var user in dbEntities.Staffs)
+            {
+                staffList.Add(user);
+            }
+        }
+
+
+        private void lstUsersList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (staffList.Count > 0)//Make sure a user record exists in the database
+            {
+                if (lstUsersList.SelectedIndex > -1)//ensures a record is selected
+                {
+                    //Gets the user from the userList at the same position it is in within the ListView
+                    currentUser = staffList.ElementAt(this.lstUsersList.SelectedIndex);
+                    mtdPopulateUserDetails(currentUser);
+                }
+            }
+        }
+
+        private void mtdPopulateUserDetails(Staff selectedUser)
+        {
+            try
+            {
+                // dockUserPanel.Visibility = Visibility.Visible;
+                tbxUserForename.Text = selectedUser.Forename;
+                tbxUserSurname.Text = selectedUser.Surname;
+                tbxUserPassword.Text = selectedUser.Password;
+                tbxUsername.Text = selectedUser.UserName;
+                if (selectedUser.AccessLevel == 0)//Admin
+                {
+                    cboAccessLevel.SelectedIndex = 0;
+                }
+                if (selectedUser.AccessLevel == 1)//A new record may need to be created and its index will =0
+                {
+                    cboAccessLevel.SelectedIndex = 1;//Staff
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Problem importing user information");
+            }
+
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            currentUser.Forename = tbxUserForename.Text.Trim();
+            currentUser.Surname = tbxUserSurname.Text.Trim();
+            currentUser.Password = tbxUserPassword.Text.Trim();
+            currentUser.UserName = tbxUsername.Text.Trim();
+            currentUser.AccessLevel = cboAccessLevel.SelectedIndex;
+            bool userVerified = mtdVerifyUserDetails(currentUser);
+            if (userVerified)
+            {
+                mtdUpdateUser(currentUser, entityState);
+                mtdPopulateUserTable();
+                lstUsersList.Items.Refresh();
+            }
+
+        }
+
+        private bool mtdVerifyUserDetails(Staff user)
+        {
+            bool userVerified = false;
+            try
+            {
+                if (user.Forename == null)
+                {
+                    user.Forename = "";
+                }
+                if (user.Surname == null)
+                {
+                    user.Surname = "";
+                }
+                if (user.UserName == null)
+                {
+                    user.UserName = "";
+                }
+                if (user.Password == null)
+                {
+                    user.Password = "";
+                }
+                if (user.AccessLevel == -1)
+                {
+                    user.AccessLevel = 2;
+                }
+                userVerified = true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Problem verifying user");
+            }
+            return userVerified;
+        }
+
+        private void mtdUpdateUser(Staff user, string modifyState)
+        {
+            try
+            {
+                if (modifyState == "Add")
+                {
+                    user.StaffID = Guid.NewGuid().ToString();//Create new StaffID for database                 
+                    dbEntities.Configuration.AutoDetectChangesEnabled = false;
+                    dbEntities.Configuration.ValidateOnSaveEnabled = false;
+                    dbEntities.Entry(user).State = System.Data.Entity.EntityState.Added;
+                    MessageBox.Show("New user added");
+                }
+                if (modifyState == "Modify")
+                {
+                    foreach (var userRecord in dbEntities.Staffs.Where(t => t.StaffID == user.StaffID))
+                    {
+                        userRecord.Forename = user.Forename;
+                        userRecord.Surname = user.Surname;
+                        userRecord.UserName = user.UserName;
+                        userRecord.Password = user.Password;
+                        userRecord.AccessLevel = user.AccessLevel;
+                        MessageBox.Show("User modified");
+                    }
+                }
+                if (modifyState == "Delete")
+                {
+                    dbEntities.Staffs.RemoveRange(
+                 dbEntities.Staffs.Where(t => t.StaffID == user.StaffID));
+                    MessageBox.Show("User deleted");
+                }
+                dbEntities.SaveChanges();
+                dbEntities.Configuration.AutoDetectChangesEnabled = true;
+                dbEntities.Configuration.ValidateOnSaveEnabled = true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Problem writing to database");
+            }
+        }
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            mtdClearUserDetails();
+            entityState = "Add";
+            //Tester
+            //mtdUpdateUser(currentUser, entityState);
+            mtdPopulateUserTable();
+            lstUsersList.Items.Refresh();
+
+        }
+        private void mtdClearUserDetails()
+        {
+            tbxUserForename.Text = "";
+            tbxUserSurname.Text = "";
+            tbxUsername.Text = "";
+            tbxUserPassword.Text = "";
+            cboAccessLevel.SelectedIndex = 0;
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            //SqlConnection con = new SqlConnection"Data Source=LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Damien\Source\Repos\Damien123\GymSystem\gymDatabase.mdf;Integrated Security=True")
-            //sqlCommand sc = new sqlCommand("insert into Staff values('" + tbxID1 + "'," + tbxGender + "'," + tbxFN1 + "'," + tbxSN1 + "'," + tbxDOB + "'," + tbxUN + "'," + tbxAddr1 + "'," + tbxAddr2 + "'," + tbxPW + "'," + tbxPhone + "'," + tbxAL);
-            //int o = sc.ExecuteNenQuery();
-            //MessageBox.Show(o + " :Record has been inserted");
-            //con.Close();
-
-
+            entityState = "Delete";
+            mtdUpdateUser(currentUser, entityState);
+            mtdPopulateUserTable();
+            lstUsersList.Items.Refresh();
 
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            ////    List<Staff> staffList = new List<Staff>();
 
-            ////    DataTable dt = new DataTable();
-
-            ////    //SqlConnection connection = new SqlConnection("");
-            ////    //connection.Open();
-            ////    SqlCommand sqlCmd = new SqlCommand("SELECT ForetName,Surname FROM staffList WHERE Forename = Damien AND Surname = Dolan", conn);
-            ////    SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
-
-            ////  //  sqlCmd.Parameters.AddWithValue("@Value1", tbxFN.SelectedItem.Text);
-            ////  //  sqlCmd.Parameters.AddWithValue("@Value2", DropDownList2.SelectedItem.Text);
-            ////    sqlDa.Fill(dt);
-            ////    if (dt.Rows.Count > 0)
-            ////    {
-            ////        tbxFN1.Text = dt.Rows[0]["Damien"].ToString();
-            ////        //Where ColumnName is the Field from the DB that you want to display
-            ////        tbxSN1.Text = dt.Rows[0]["Dolan"].ToString();
-            ////    }
-            ////   // connection.Close();
-            ////}
-        }
     }
 }

@@ -24,5 +24,25 @@ namespace GymSystem
         {
             InitializeComponent();
         }
+
+        private void btnView_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnLoad_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

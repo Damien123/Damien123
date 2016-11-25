@@ -297,3 +297,5 @@ C:\Users\Damien\Desktop\Damien123\GymSystem\obj\Debug\GymSystem.Properties.Resou
 C:\Users\Damien\Desktop\Damien123\GymSystem\obj\Debug\GymSystem.csproj.GenerateResource.Cache
 C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\Login2.g.cs
 C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\Login2.baml
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\WpfAnimatedGif.dll
+C:\Users\Damien\Source\Repos\Damien123\GymSystem\bin\Debug\WpfAnimatedGif.xml

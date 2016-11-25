@@ -24,25 +24,28 @@ namespace GymSystem
     /// </summary>
     public partial class Login2 : Window
     {
-        public BackgroundWorker bw = new BackgroundWorker();
+        /// public BackgroundWorker bw = new BackgroundWorker();
+        /// 
+      ///  private GifImage gifImage = null;
+      ////  private string filePath = @"C:\Users\Damien\Desktop\lightening.gif";
 
-        //Global list of user records
-        List<Member> memberList = new List<Member>();
+
+            //Global list of user records
+            List<Member> memberList = new List<Member>();
         List<Staff> staffList = new List<Staff>();
         gymDatabaseEntities dbEntities = new gymDatabaseEntities();
         gymDatabaseEntities dbEntities2 = new gymDatabaseEntities();
 
         public Login2()
         {
-            InitializeComponent();
-
+           
 
             ///create a Background Worker process for extra functionality to work with alternative login code at bottom of screen
-            bw.WorkerReportsProgress = true;
-            bw.WorkerSupportsCancellation = true;
-           // bw.DoWork += new DoWorkEventHandler(bw_DoWork);
+            //   bw.WorkerReportsProgress = true;
+            //    bw.WorkerSupportsCancellation = true;
+            // bw.DoWork += new DoWorkEventHandler(bw_DoWork);
             ///bw.ProgressChanged += new ProgressChangedEventHandler(bw_ProgressChanged);
-           // bw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(bw_RunWorkerCompleted);
+            // bw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(bw_RunWorkerCompleted);
         }
 
 

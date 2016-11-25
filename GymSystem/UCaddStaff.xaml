@@ -4,65 +4,114 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GymSystem"
-              mc:Ignorable="d" Width="715" Height="535">
-    <Grid Margin="10,0,10,17">
+              mc:Ignorable="d" Width="710" Height="530" Padding="-10,0" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+    <Grid Margin="10,0,10,17" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="47*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="199*"/>
+            <RowDefinition Height="239*"/>
         </Grid.RowDefinitions>
 
 
+        <Grid Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Margin="0,0,0,183" Grid.RowSpan="2" Grid.Row="1" Width="675" Height="255" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="591*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="16*" />
+                <RowDefinition Height="16*" />
+                <RowDefinition Height="16*" />
+                <RowDefinition Height="16*" />
+                <RowDefinition Height="16*" />
+                <RowDefinition Height="16*" />
+            </Grid.RowDefinitions>
+            <Label  x:Name="lblUsername" Grid.Row="2" Margin="0,0,22,0" Content="Username"/>
+            <Label Grid.Row="3"  x:Name="lblPassword" Margin="0,0,22,0" Content="Password"/>
+            <Label Grid.Row="4" Foreground="Black" x:Name="lblUserAccess" Margin="0,0,22,0" Content="Access level" />
+            <TextBox Grid.Column="1"  Height="26" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" IsEnabled="True"                      
+                     x:Name="tbxUsername" Grid.Row="2" Margin="0,7" />
+            <TextBox Grid.Column="1"  Height="26" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200"
+                     Grid.Row="3" 
+                     x:Name="tbxUserPassword" TabIndex="3" Margin="0,7" />
+            <ComboBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Width="200"
+                      x:Name="cboAccessLevel" TabIndex="4" Height="28" Margin="0,6">
+                <ComboBoxItem Content="Administrator"/>
+                <ComboBoxItem Content="Staff"/>
+            </ComboBox>
+            <DockPanel Grid.Row="5" Grid.Column="1" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,9" Height="20">
+                <Button Grid.Column="1"               
+                    HorizontalAlignment="Left" 
+                    x:Name="btnCancel" 
+                    Click="btnAdd_Click" 
+                            Margin="3,0"
+                    Width="60" Height="20" VerticalAlignment="Bottom" Content="Add" />
 
-        <Canvas   Height="530" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="710" Margin="-9,0,-10,-16" Grid.RowSpan="2">
+                <Button Grid.Column="1"                                                     
+                    x:Name="btnDelete" 
+                    Click="btnDelete_Click"
+                    
+                            Margin="3,0"
+                    Width="60" TabIndex="5" Content="Delete"/>
 
-            <Label x:Name="lblID" Content="StaffID" Canvas.Left="27" Canvas.Top="63" Width="88" RenderTransformOrigin="0.441,-0.738"/>
-            <Label x:Name="lblGender" Content="Gender:" Canvas.Left="26" Canvas.Top="89" Width="88"/>
-            <Label x:Name="lblFN" Content="Forename:" Canvas.Left="26" Canvas.Top="117" Width="88"/>
-            <Label x:Name="lblSN" Content="Surname" Canvas.Left="27" Canvas.Top="145" Width="69"/>
-            <Label x:Name="lblDOB" Content="DOB:" Canvas.Left="26" Canvas.Top="173" Width="70"/>
-            <Label x:Name="lblUN" Content="Username:" Canvas.Left="27" Canvas.Top="199" Width="70"/>
-            <Label x:Name="lblAdd" Content="Address1:" Canvas.Left="27" Canvas.Top="230" Width="70"/>
-            <Label x:Name="lbladdr2" Content="Address2:" Canvas.Left="27" Canvas.Top="256" Width="69"/>
-            <Label x:Name="lbPhone" Content="Password:" Canvas.Left="27" Canvas.Top="282" Width="69"/>
-            <Label x:Name="lblPhone" Content="Phone:" Canvas.Left="26" Canvas.Top="310" Width="69"/>
-            <Label x:Name="lblAL" Content="AccessLevel:" Canvas.Left="27" Canvas.Top="336" Width="87"/>
+                <Button Grid.Column="1"                   
+                    HorizontalAlignment="Right"                   
+                    x:Name="btnUpdate" 
+                    Click="btnUpdate_Click"
+                                
+                    Width="65" TabIndex="5" Content="Update"/>
+            </DockPanel>
+            <Label x:Name="label1"  Grid.Row="0" Margin="0,0,22,0" Content="Forename"/>
+            <TextBox Grid.Column="1" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200"  x:Name="tbxUserForename" TabIndex="1" Grid.Row="0" Margin="0,10,0,4" />
+            <Label Grid.Row="1"  x:Name="label2" Margin="0,0,22,0" Content="Surname"/>
+            <TextBox Grid.Column="1" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" 
+                     Grid.Row="1" 
+                    x:Name="tbxUserSurname" TabIndex="2" Margin="0,7" />
+        </Grid>
 
-            <Button x:Name="btnSave" Content="Save" Canvas.Left="187" Canvas.Top="404" Width="75"/>
-            <Button x:Name="btnDelete" Content="Add" Canvas.Left="27" Canvas.Top="404" Width="75" Click="btnDelete_Click"/>
-            <Button x:Name="btnClear" Content="Clear" Canvas.Left="107" Canvas.Top="404" Width="75"/>
-
-
-            <TextBox x:Name="tbxID1" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="61" Width="120"/>
-            <TextBox x:Name="tbxGender" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="89" Width="120"/>
-            <TextBox x:Name="tbxFN1" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="117" Width="120"/>
-            <TextBox x:Name="tbxSN1" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="145" Width="120"/>
-            <TextBox x:Name="tbxDOB" Height="23" TextWrapping="Wrap" Width="120" Canvas.Left="168" Canvas.Top="173"/>
-            <TextBox x:Name="tbxUN" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="201" Width="120"/>
-            <TextBox x:Name="tbxAddr1" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="229" Width="120"/>
-            <TextBox x:Name="tbxAddr2" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="257" Width="120"/>
-            <TextBox x:Name="tbxPW" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="285" Width="120"/>
-            <TextBox x:Name="tbxPhone" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="313" Width="120"/>
-            <TextBox x:Name="tbxAL" Height="23" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="341" Width="120"/>
-
-            <StackPanel Name="spCred1" Height="348" Canvas.Left="16" Canvas.Top="28" Width="285"/>
-            <StackPanel Name="spButtons" Height="20" Canvas.Left="10" Canvas.Top="404" Width="278"/>
-            <StackPanel Name="spTitle" Height="46" Canvas.Left="16" Canvas.Top="10" Width="524"/>
-            <StackPanel Name="spCred2" Height="179" Canvas.Left="306" Canvas.Top="148" Width="234"/>
-            <TextBlock x:Name="textBlock" Canvas.Left="306" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="63" Width="224" Height="108"/>
-
-            <Label x:Name="lblCredTitle" Content="Please Enter Credentials" Canvas.Left="306" Canvas.Top="173" Width="234" Height="23"/>
-            <Label x:Name="lblAddTitle" BorderThickness="2" BorderBrush="Aqua" Content="Add Staff Member" Canvas.Left="16" Canvas.Top="23" Width="644" FontWeight="Bold" FontSize="14"/>
-            <Label x:Name="lblLN2" Content="Last Name:" Canvas.Left="306" Canvas.Top="258" Width="88"/>
-            <Label x:Name="lblFN2" Content="First Name:" Canvas.Left="306" Canvas.Top="232" Width="88"/>
-            <Label x:Name="lblID2" Content="ID Number:" Canvas.Left="306" Canvas.Top="201" Width="88" RenderTransformOrigin="0.441,-0.738"/>
-
-            <TextBox x:Name="tbxID2" Height="23" Canvas.Left="410" TextWrapping="Wrap" Text="TextBox" Canvas.Top="202" Width="120"/>
-            <TextBox x:Name="tbxFN2" Height="23" Canvas.Left="410" TextWrapping="Wrap" Text="TextBox" Canvas.Top="233" Width="120"/>
-            <TextBox x:Name="tbxLN2" Height="23" Canvas.Left="410" TextWrapping="Wrap" Text="TextBox" Canvas.Top="262" Width="120"/>
-            <Button x:Name="button" Content="Search" Canvas.Left="410" Canvas.Top="290" Width="120" Click="button_Click"/>
-            <DataGrid x:Name="dataGrid" Canvas.Left="410" Canvas.Top="341" Height="153" Width="250"/>
-
-        </Canvas>
-
+        <DockPanel Grid.Row="2" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Margin="0,61,0,0">
+            <ListView x:Name="lstUsersList" SelectionChanged="lstUsersList_SelectionChanged" HorizontalAlignment="Left" Margin="10,10,10,0" VerticalAlignment="Top" Width="510">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn  Header="Forename" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock TextWrapping="Wrap" HorizontalAlignment="Stretch" Text="{Binding Forename}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn  Header="Surname" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock TextWrapping="Wrap" HorizontalAlignment="Stretch" Text="{Binding Surname}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn  Header="Username" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock TextWrapping="Wrap" HorizontalAlignment="Stretch" Text="{Binding UserName}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn  Header="Password" Width="100" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock TextWrapping="Wrap" HorizontalAlignment="Stretch" Text="{Binding Password}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn  Header="Access level"  Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock TextWrapping="Wrap" HorizontalAlignment="Stretch" Text="{Binding AccessLevel}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </DockPanel>
+        <Label x:Name="lblAddTitle" BorderThickness="2" BorderBrush="Aqua" Content="Add Staff Member" FontWeight="Bold" FontSize="14" Margin="-3,10,0,33"/>
     </Grid>
 </UserControl>

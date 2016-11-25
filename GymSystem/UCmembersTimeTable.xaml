@@ -13,14 +13,15 @@
 
 
 
+
         <Canvas   Height="530" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="710" Margin="-9,0,-10,-16" Grid.RowSpan="2">
-            <StackPanel Name="spButtons" Height="20" Canvas.Left="10" Canvas.Top="311" Width="278"/>
             <StackPanel Name="spTitle" Height="46" Canvas.Left="16" Canvas.Top="10" Width="524"/>
             <StackPanel Name="spCred2" Height="179" Canvas.Left="306" Canvas.Top="148" Width="234"/>
-            <Label x:Name="lblViewTitle" BorderThickness="2" BorderBrush="Aqua" Content="View Timetable" Canvas.Left="10" Canvas.Top="23" Width="650" FontWeight="Bold" FontSize="14"/>
-            <Calendar Canvas.Left="457" Canvas.Top="77" Width="185" Height="172"/>
+            <Label x:Name="lblViewTitle" BorderThickness="2" BorderBrush="Aqua" Content="View Timetable" Canvas.Left="16" Canvas.Top="23" Width="670" FontWeight="Bold" FontSize="14"/>
+            <Calendar Canvas.Left="475" Canvas.Top="94" Width="185" Height="352"/>
+            <GroupBox x:Name="gbTT" Header="TimeTable" Canvas.Left="16" Canvas.Top="74" Height="402" Width="670"/>
         </Canvas>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="338" VerticalAlignment="Top" Width="403" Margin="36,74,0,0" Source="image/tt3.jpg" Stretch="Fill" OpacityMask="Black"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="352" VerticalAlignment="Top" Width="416" Margin="22,96,0,0" Source="image/tt3.jpg" Stretch="Fill" OpacityMask="Black"/>
 
     </Grid>
 </UserControl>

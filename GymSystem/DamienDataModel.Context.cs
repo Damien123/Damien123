@@ -29,5 +29,6 @@ namespace GymSystem
         public virtual DbSet<ExerciseClass> ExerciseClasses { get; set; }
         public virtual DbSet<Member> Members { get; set; }
         public virtual DbSet<Staff> Staffs { get; set; }
+        public virtual DbSet<TimeTable> TimeTables { get; set; }
     }
 }

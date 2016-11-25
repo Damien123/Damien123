@@ -18,7 +18,7 @@
     </Window.Background>
     <Grid Height="585" Margin="24,34,28,0" VerticalAlignment="Top">
         <Grid.Background>
-            <ImageBrush ImageSource="image/lightening.gif" Stretch="UniformToFill" />
+            <ImageBrush x:Name="img" ImageSource="image/lightening.gif" Stretch="UniformToFill" />
         </Grid.Background>
         <StackPanel HorizontalAlignment="Left" Height="65" Margin="23,260,0,0" VerticalAlignment="Top" Width="297" >
             <Canvas Height="66" Margin="10,0,0,0" HorizontalAlignment="Left" Width="249">

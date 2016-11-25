@@ -14,6 +14,7 @@
     <EntitySet Name="ExerciseClasses" EntityType="gymDatabaseModel.ExerciseClass" />
     <EntitySet Name="Members" EntityType="gymDatabaseModel.Member" />
     <EntitySet Name="Staffs" EntityType="gymDatabaseModel.Staff" />
+    <EntitySet Name="TimeTables" EntityType="gymDatabaseModel.TimeTable" />
   </EntityContainer>
   <EntityType Name="ExerciseClass">
     <Key>
@@ -46,7 +47,7 @@
       <PropertyRef Name="StaffID" />
     </Key>
     <Property Name="StaffID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Forename" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="Surname" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="DOB" Type="DateTime" Precision="0" />
@@ -56,5 +57,18 @@
     <Property Name="Password" Type="String" Nullable="false" MaxLength="15" FixedLength="true" Unicode="true" />
     <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="AccessLevel" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable">
+    <Key>
+      <PropertyRef Name="Day" />
+    </Key>
+    <Property Name="Day" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Monday" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Tuesday" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Wednesday" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Thursday" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Friday" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Saturday" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Sunday" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

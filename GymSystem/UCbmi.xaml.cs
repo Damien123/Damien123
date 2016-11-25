@@ -13,6 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
+using System.Media;
+
 namespace GymSystem
 {
     /// <summary>
@@ -23,7 +27,15 @@ namespace GymSystem
         public UCbmi()
         {
             InitializeComponent();
+           
         }
+
+        private void btnBMI_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+
 
         private void btnBmi_Click(object sender, RoutedEventArgs e)
         {
@@ -36,12 +48,27 @@ namespace GymSystem
             textBlock.Text = bmi1;
 
             string Text = Console.ReadLine();
-
-            try
+                       
+                try
             {
+                ////if ((e.KeyChar == '.') && (((TextBox)sender).Text.IndexOf('.') > -1))
+                ////{
+                ////    e.Handled = true;
+                ////    return;
+                ////}
 
-           
-            if (bmi < 18)
+                ////if (!Char.IsDigit(e.KeyChar))
+                ////{
+                ////    if ((e.KeyChar != '.') &&
+                ////        (e.KeyChar != Convert.ToChar(Keys.Back)))
+                ////    {
+                ////        e.Handled = true;
+                ////        return;
+                ////    }
+                ////}
+               
+               
+                if (bmi < 18)
             {
                 textBlock.Background = Brushes.LightSkyBlue;
                 textBlock.Text = bmi1 + " Your BMI Results Suggest That You Are UnderWeight";
@@ -139,6 +166,8 @@ namespace GymSystem
                 throw;
             }
         }
+
+        
     }
  }
 

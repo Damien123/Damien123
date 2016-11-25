@@ -40,7 +40,7 @@
       <PropertyRef Name="StaffID" />
     </Key>
     <Property Name="StaffID" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="Gender" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="10" />
     <Property Name="Forename" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Surname" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="DOB" Type="date" />
@@ -51,10 +51,24 @@
     <Property Name="Phone" Type="varchar" MaxLength="20" />
     <Property Name="AccessLevel" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="TimeTable">
+    <Key>
+      <PropertyRef Name="Day" />
+    </Key>
+    <Property Name="Day" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Monday" Type="varchar" MaxLength="10" />
+    <Property Name="Tuesday" Type="varchar" MaxLength="10" />
+    <Property Name="Wednesday" Type="varchar" MaxLength="20" />
+    <Property Name="Thursday" Type="varchar" MaxLength="10" />
+    <Property Name="Friday" Type="varchar" MaxLength="10" />
+    <Property Name="Saturday" Type="varchar" MaxLength="10" />
+    <Property Name="Sunday" Type="varchar" MaxLength="10" />
+  </EntityType>
   <EntityContainer Name="gymDatabaseModelStoreContainer">
     <EntitySet Name="Booking" EntityType="Self.Booking" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ExerciseClass" EntityType="Self.ExerciseClass" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Members" EntityType="Self.Members" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimeTable" EntityType="Self.TimeTable" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

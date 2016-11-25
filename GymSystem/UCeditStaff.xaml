@@ -15,43 +15,50 @@
 
         <Canvas   Height="530" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Left" Width="710" Margin="-9,0,-10,-16" Grid.RowSpan="2">
 
-            <Label x:Name="lblID" Content="ID Number:" Canvas.Left="27" Canvas.Top="63" Width="88" RenderTransformOrigin="0.441,-0.738"/>
-            <Label x:Name="lblFName" Content="First Name:" Canvas.Left="26" Canvas.Top="89" Width="88"/>
-            <Label x:Name="lblLName" Content="Last Name:" Canvas.Left="26" Canvas.Top="117" Width="88"/>
-            <Label x:Name="lblAge" Content="Age:" Canvas.Left="27" Canvas.Top="145" Width="69"/>
-            <Label x:Name="lblContact" Content="Contact:" Canvas.Left="26" Canvas.Top="173" Width="70"/>
-            <Label x:Name="lblAdd1" Content="Address1:" Canvas.Left="27" Canvas.Top="199" Width="70"/>
-            <Label x:Name="lblAdd2" Content="Address2:" Canvas.Left="27" Canvas.Top="230" Width="70"/>
+            <Label x:Name="lblID" Content="StaffID" Canvas.Left="25" Canvas.Top="92" Width="88" RenderTransformOrigin="0.441,-0.738"/>
+            <Label x:Name="lblGender" Content="Gender:" Canvas.Left="24" Canvas.Top="118" Width="88"/>
+            <Label x:Name="lblFN" Content="First Name:" Canvas.Left="24" Canvas.Top="146" Width="88"/>
+            <Label x:Name="lblSN" Content="Last Name" Canvas.Left="25" Canvas.Top="174" Width="69"/>
+            <Label x:Name="lblDOB" Content="DOB:" Canvas.Left="24" Canvas.Top="202" Width="70"/>
+            <Label x:Name="lblUN" Content="Username:" Canvas.Left="25" Canvas.Top="228" Width="70"/>
+            <Label x:Name="lblAdd" Content="Address1:" Canvas.Left="306" Canvas.Top="94" Width="70"/>
+            <Label x:Name="lbladdr2" Content="Address2:" Canvas.Left="306" Canvas.Top="120" Width="69"/>
+            <Label x:Name="lbPhone" Content="Password:" Canvas.Left="306" Canvas.Top="146" Width="69"/>
+            <Label x:Name="lblPhone" Content="Phone:" Canvas.Left="305" Canvas.Top="174" Width="69"/>
+            <Label x:Name="lblAL" Content="AccessLevel:" Canvas.Left="306" Canvas.Top="200" Width="87"/>
 
-            <Button x:Name="btnSave" Content="Save" Canvas.Left="176" Canvas.Top="311" Width="75"/>
-            <Button x:Name="btnDelete" Content="Edit" Canvas.Left="16" Canvas.Top="311" Width="75"/>
-            <Button x:Name="btnClear" Content="Clear" Canvas.Left="96" Canvas.Top="311" Width="75"/>
+            <Button x:Name="btnSave" Content="Save" Canvas.Left="606" Canvas.Top="149" Width="75" Click="btnSave_Click"/>
+            <Button x:Name="btn1Edit" Content="Edit" Canvas.Left="606" Canvas.Top="92" Width="75" Click="btnEdit_Click" RenderTransformOrigin="0.467,0.95"/>
+            <Button x:Name="btnClear" Content="Clear" Canvas.Left="606" Canvas.Top="121" Width="75" Click="btnClear_Click"/>
 
 
-            <TextBox x:Name="tbxID1" Height="23" Canvas.Left="168" TextWrapping="Wrap" Text="TextBox" Canvas.Top="61" Width="120"/>
-            <TextBox x:Name="tbxFN1" Height="23" Canvas.Left="168" TextWrapping="Wrap" Text="TextBox" Canvas.Top="89" Width="120"/>
-            <TextBox x:Name="tbxLN1" Height="23" Canvas.Left="168" TextWrapping="Wrap" Text="TextBox" Canvas.Top="117" Width="120"/>
-            <TextBox x:Name="tbxAge" Height="23" Canvas.Left="168" TextWrapping="Wrap" Text="TextBox" Canvas.Top="145" Width="120"/>
-            <TextBox x:Name="tbxContact" Height="23" TextWrapping="Wrap" Text="TextBox" Width="120" Canvas.Left="168" Canvas.Top="173"/>
-            <TextBox x:Name="tbxAddr1" Height="23" Canvas.Left="168" TextWrapping="Wrap" Text="TextBox" Canvas.Top="201" Width="120"/>
-            <TextBox x:Name="tbxAddr2" Height="23" Canvas.Left="168" TextWrapping="Wrap" Text="TextBox" Canvas.Top="229" Width="120"/>
-
-            <StackPanel Name="spCred1" Height="256" Canvas.Left="16" Canvas.Top="28" Width="285"/>
-            <StackPanel Name="spButtons" Height="20" Canvas.Left="10" Canvas.Top="311" Width="278"/>
+            <TextBox x:Name="tbxID1" Height="22" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="90" Width="120"/>
+            <TextBox x:Name="tbxGender" Height="22" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="118" Width="120"/>
+            <TextBox x:Name="tbxFN1" Height="22" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="146" Width="120"/>
+            <TextBox x:Name="tbxSN1" Height="22" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="174" Width="120"/>
+            <TextBox x:Name="tbxDOB" Height="22" TextWrapping="Wrap" Width="120" Canvas.Left="166" Canvas.Top="202"/>
+            <TextBox x:Name="tbxUN" Height="22" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="230" Width="120"/>
+            <TextBox x:Name="tbxAddr1" Height="23" Canvas.Left="447" TextWrapping="Wrap" Canvas.Top="93" Width="120"/>
+            <TextBox x:Name="tbxAddr2" Height="23" Canvas.Left="447" TextWrapping="Wrap" Canvas.Top="121" Width="120"/>
+            <TextBox x:Name="tbxPW" Height="23" Canvas.Left="447" TextWrapping="Wrap" Canvas.Top="149" Width="120"/>
+            <TextBox x:Name="tbxPhone" Height="23" Canvas.Left="447" TextWrapping="Wrap" Canvas.Top="177" Width="120"/>
+            <TextBox x:Name="tbxAL" Height="23" Canvas.Left="447" TextWrapping="Wrap" Canvas.Top="205" Width="120"/>
             <StackPanel Name="spTitle" Height="46" Canvas.Left="16" Canvas.Top="10" Width="524"/>
-            <StackPanel Name="spCred2" Height="179" Canvas.Left="306" Canvas.Top="148" Width="234"/>
-            <TextBlock x:Name="textBlock" Canvas.Left="306" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="63" Width="224" Height="108"/>
+            <Label x:Name="lblAddTitle" BorderThickness="2" BorderBrush="Aqua" Content="Add Staff Member" Canvas.Left="16" Canvas.Top="23" Width="684" FontWeight="Bold" FontSize="14"/>
+            <Label x:Name="lblLN2" Content="Last Name:" Canvas.Left="343" Canvas.Top="325" Width="88"/>
+            <Label x:Name="lblFN2" Content="First Name:" Canvas.Left="343" Canvas.Top="299" Width="88"/>
+            <Label x:Name="lblID2" Content="ID Number:" Canvas.Left="16" Canvas.Top="296" Width="88" RenderTransformOrigin="0.441,-0.738"/>
 
-            <Label x:Name="lblCredTitle" Content="Please Enter Credentials" Canvas.Left="306" Canvas.Top="173" Width="234" Height="23"/>
-            <Label x:Name="lblAddTitle" BorderThickness="2" BorderBrush="Aqua" Content="View/Edit Staff Member" Canvas.Left="16" Canvas.Top="23" Width="684" FontWeight="Bold" FontSize="14"/>
-            <Label x:Name="lblLN2" Content="Last Name:" Canvas.Left="306" Canvas.Top="258" Width="88"/>
-            <Label x:Name="lblFN2" Content="First Name:" Canvas.Left="306" Canvas.Top="232" Width="88"/>
-            <Label x:Name="lblID2" Content="ID Number:" Canvas.Left="306" Canvas.Top="201" Width="88" RenderTransformOrigin="0.441,-0.738"/>
+            <TextBox x:Name="tbxID2" Height="23" Canvas.Left="166" TextWrapping="Wrap" Text="" Canvas.Top="300" Width="120"/>
+            <TextBox x:Name="tbxFN2" Height="23" Canvas.Left="447" TextWrapping="Wrap" Text="" Canvas.Top="300" Width="120"/>
+            <TextBox x:Name="tbxLN2" Height="23" Canvas.Left="447" TextWrapping="Wrap" Text="" Canvas.Top="328" Width="120"/>
+            <Button x:Name="button" Content="Search" Canvas.Left="606" Canvas.Top="300" Width="75" Click="button_Click" RenderTransformOrigin="0.053,0.6" Height="22"/>
+            <DataGrid x:Name="dataGrid" Canvas.Left="16" Canvas.Top="381" Height="139" Width="684"/>
+            <GroupBox x:Name="gbMembersCredentials" Header="Members Credentials" Canvas.Left="10" Canvas.Top="61" Height="204" Width="690" RenderTransformOrigin="0.5,0.5">
+            </GroupBox>
+            <GroupBox x:Name="gbStaffTable" Header="Staff Table" Canvas.Left="10" Canvas.Top="364" Height="166" Width="690"/>
+            <GroupBox x:Name="gbQuickSearch" Header="Quick Search" Height="94" Canvas.Left="10" Canvas.Top="270" Width="690"/>
 
-            <TextBox x:Name="tbxID2" Height="23" Canvas.Left="410" TextWrapping="Wrap" Text="TextBox" Canvas.Top="202" Width="120"/>
-            <TextBox x:Name="tbxFN2" Height="23" Canvas.Left="410" TextWrapping="Wrap" Text="TextBox" Canvas.Top="233" Width="120"/>
-            <TextBox x:Name="tbxLN2" Height="23" Canvas.Left="410" TextWrapping="Wrap" Text="TextBox" Canvas.Top="262" Width="120"/>
-            <Button x:Name="button" Content="Search" Canvas.Left="410" Canvas.Top="290" Width="120"/>
         </Canvas>
 
     </Grid>
