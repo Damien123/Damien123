@@ -138,6 +138,32 @@ namespace GymSystem
                 {
                     user.AccessLevel = 2;
                 }
+                if (user.Address1 == null)
+                {
+                    user.Address1 = "";
+                }
+                if (user.Address2 == null)
+                {
+                    user.Address2 = "";
+                }
+                if (user.DOB == null)
+                {
+                    DateTime todysDate = DateTime.Now.Date;
+                    user.DOB = todysDate;
+                }
+                if (user.Gender == null)
+                {
+                    user.Gender = "";
+                }
+                if (user.Phone == null)
+                {
+                    user.Phone = "";
+                }
+                if (user.StaffID == null)
+                {
+                    user.StaffID = "";
+                }
+
                 userVerified = true;
             }
             catch (Exception)
@@ -157,7 +183,7 @@ namespace GymSystem
                     dbEntities.Configuration.AutoDetectChangesEnabled = false;
                     dbEntities.Configuration.ValidateOnSaveEnabled = false;
                     dbEntities.Entry(user).State = System.Data.Entity.EntityState.Added;
-                    MessageBox.Show("New user added");
+                    //MessageBox.Show("New user added");
                 }
                 if (modifyState == "Modify")
                 {
@@ -190,8 +216,10 @@ namespace GymSystem
         {
             mtdClearUserDetails();
             entityState = "Add";
+           // mtdVerifyUserDetails
             //Tester
-            //mtdUpdateUser(currentUser, entityState);
+
+            mtdUpdateUser(currentUser, entityState);
             mtdPopulateUserTable();
             lstUsersList.Items.Refresh();
 

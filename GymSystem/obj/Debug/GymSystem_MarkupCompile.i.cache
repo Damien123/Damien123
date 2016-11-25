@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Damien\Source\Repos\Damien123\GymSystem\obj\Debug\
+C:\Users\james.connolly\Source\Repos\Damien1232\GymSystem\obj\Debug\
 GymSystem
 none
 false
 DEBUG;TRACE
-C:\Users\Damien\Source\Repos\Damien123\GymSystem\App.xaml
+C:\Users\james.connolly\Source\Repos\Damien1232\GymSystem\App.xaml
 171758881511
 4-1536595215
-33-1349854643
-19-1181074561
+332088984203
+19897128181
 addMember1.xaml;AdminMenu.xaml;deleteMember2.xaml;editTimetable.xaml;Login.xaml;Login2.xaml;MainWindow.xaml;MembersMenu.xaml;splashScreen.xaml;UCaddStaff.xaml;UCbmi.xaml;UCdeleteStaff.xaml;UCeditStaff.xaml;UCmembersTimeTable.xaml;UCviewMem.xaml;UCviewTimetable.xaml;Window1.xaml;
 
 True
